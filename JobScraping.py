@@ -20,7 +20,7 @@ today=date.today()
 Current_Date = today.strftime("%m-%d-%y")
 
 #Initiating driver
-browser =webdriver.Chrome(executable_path=r"C:\Users\yoges\Documents\Work\ML (Udemy)\Testing_Web_Scraping\chromedriver.exe")
+browser =webdriver.Chrome(executable_path=r"chromedriver.exe")
 browser.maximize_window()
 browser.get("https://www.amazon.jobs/en/")
 
