@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Jun  9 21:25:13 2020
 
-@author: yoges
-"""
 
 import pandas as pd
 import time
@@ -35,7 +30,7 @@ WebDriverWait(browser, 3).until(EC.element_to_be_clickable((By.XPATH,'//*[@id="m
 #Wait until username form is not located
 username = WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.XPATH,'/html/body/main/div[2]/div/div[1]/div/div[1]/div/div/input')))
 #Enter your username
-username.send_keys("yogeshjoshi7752@gmail.com")
+username.send_keys({Enter your username})
 
 #Click on continue button
 browser.find_element_by_xpath('/html/body/main/div[2]/div/div[1]/div/button[1]').click()
@@ -43,7 +38,7 @@ browser.find_element_by_xpath('/html/body/main/div[2]/div/div[1]/div/button[1]')
 #Wait until password form is not located
 password = WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.XPATH,'//*[@id="signInFormPasswordInputField"]')))
 #Enter your passsword
-password.send_keys("1me*1TU*")
+password.send_keys({Enter your password})
 
 #Click on continue button
 browser.find_element_by_xpath('//*[@id="signInForm"]/div[6]/button').click()
